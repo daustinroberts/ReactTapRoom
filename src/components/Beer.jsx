@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 function Beer(props){
   return (
     <div class="container">
-      // <style jsx>{`
-      //   h3 {
-      //     background-color: none;
-      //     background-image: url("src/assets/images/EpicodusTapRoom.jpg
-      //     ");
-      //   }
-      // `}
-      // </style>
+      <style>{`
+        h3 {
+          background-color: none;
+          background-image: url("src/assets/images/EpicodusTapRoom.jpg
+          ");
+        }
+      `}
+      </style>
 
       <h3>{props.name}</h3>
       <h3>{props.brewer}</h3>

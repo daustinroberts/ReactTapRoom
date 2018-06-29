@@ -3,7 +3,7 @@ import React from 'react';
 
 function NewBeerForm(){
   return (
-    // <style global jsx> {`
+    // <style> {`
     //   #beergif {
     //     background-color: none;
     //     background-image: url("src/assets/images/EpicodusTapRoom.jpg");
