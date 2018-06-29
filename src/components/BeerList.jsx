@@ -57,6 +57,7 @@ var masterBeerList= [
 function BeerList(){
   return (
     <div>
+      
       <hr/>
       {masterBeerList.map((beer, index) =>
         <Beer name={beer.name}

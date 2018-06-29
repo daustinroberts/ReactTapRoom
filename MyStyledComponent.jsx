@@ -2,9 +2,11 @@ import {PropTypes} from 'prop-types';
 
 function MyStyledComponent(props) {
   var myStyledComponentStyles = {`
-    backgroundColor: '#ecf0f1';
-    fontFamily: 'sans-serif',
-    paddingTop: '50px'
+    body{
+    background-color: '#ecf0f1';
+    fontFamily: 'sans-serif';
+    paddingTop: '50px';
+  }
   `}
   return (
     <div>

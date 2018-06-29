@@ -8,6 +8,7 @@ import NewBeerForm from './NewBeerForm';
 function App() {
   return (
     <div>
+
       <Header/>
       <Switch>
         <Route exact path='/' component={BeerList} />

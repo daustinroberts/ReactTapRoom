@@ -1,7 +1,15 @@
 import React from 'react';
+// import PropTypes from 'prop-types';
 
 function NewBeerForm(){
   return (
+    // <style global jsx> {`
+    //   #beergif {
+    //     background-color: none;
+    //     background-image: url("src/assets/images/EpicodusTapRoom.jpg");
+    //   };
+    // `}
+    // </style>
     <div>
       <form>
         <input
@@ -22,6 +30,9 @@ function NewBeerForm(){
         <button type='submit'>Submit</button>
       </form>
     </div>
+    // <div class="beergif">
+    //
+    // </div>
   );
 }
 
