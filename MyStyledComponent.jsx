@@ -1,3 +1,5 @@
+import {PropTypes} from 'prop-types';
+
 function MyStyledComponent(props) {
   var myStyledComponentStyles = {`
     backgroundColor: '#ecf0f1';
