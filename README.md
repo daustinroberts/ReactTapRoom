@@ -1,3 +1,3 @@
 #ReactTapRoom
 
-![](src/assets/image/EpicodusTapRoom.pdf.jpg
+![](src/assets/image/EpicodusTapRoom.pdf.jpg)
