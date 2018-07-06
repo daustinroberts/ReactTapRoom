@@ -1,7 +1,8 @@
 import React from 'react';
+import ConfirmationQuestions from './ConfirmationQuestions';
 import NewBeerForm from './NewBeerForm';
 import PropTypes from 'prop-types';
-import ConfirmationQuestions from './ConfirmationQuestions';
+
 
 class NewBeerControl extends React.Component {
 
@@ -10,11 +11,11 @@ class NewBeerControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleTroubleshootingConfirmation=this.handleTroubleshootingConfirmation.bind(this);
+    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
   }
 
   handleTroubleshootingConfirmation(){
-    this.setState({formVisibleOnPage:true});
+    this.setState({formVisibleOnPage: true});
   }
 
   render(){
@@ -22,7 +23,7 @@ class NewBeerControl extends React.Component {
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewBeerForm onNewBeerCreation={this.props.onNewBeerCreation}/>;
     } else {
-      currentlyVisibleContent = <ConfirmationQuestions onTroubleShootingConfirmation={this.handleTroubleshootingConfirmation}/>;
+      currentlyVisibleContent = <ConfirmationQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
     }
     return (
       <div>

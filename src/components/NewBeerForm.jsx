@@ -17,7 +17,8 @@ function NewBeerForm(props){
         name: _name.value,
         brewer: _brewer.value,
         description: _description.value,
-        abv: _abv.value, price: _price.value,
+        abv: _abv.value,
+        price: _price.value,
         remaining: _remaining.value
       });
   }
@@ -35,7 +36,7 @@ function NewBeerForm(props){
     //   </style>
     // </div>
 
-    <div>
+
       <form onSubmit={handleNewBeerFormSubmission}>
         <input
           type='text'
@@ -54,6 +55,11 @@ function NewBeerForm(props){
         <input
           type='text'
           id='abv'
+          placeholder='ABV'
+          ref={(input) => {_abv = input;}}/>
+        <input
+          type='text'
+          id='Price'
           placeholder='Price'
           ref={(input) => {_price = input;}}/>
         <input
@@ -63,7 +69,9 @@ function NewBeerForm(props){
           ref={(input) => {_remaining = input;}}/>
         <button type='submit'>Submit</button>
       </form>
-    </div>
+    // <div id='beerGif'>
+    //
+    // </div>
   );
 }
 
