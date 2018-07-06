@@ -5,18 +5,19 @@ import PropTypes from 'prop-types';
 
 function Beer(props){
 
-    // <div class="container">
-    //   <style>{`
-    //     #list {
-    //       background-color: lightblue;
-    //       font: Fantasy;
-    //     }
-    //     body {
-    //       background-image: url("../assets/images/EpicodusTapRoom.jpg");
-    //       }
-    //   `}
-    //   </style>
-    const beerInformation =
+  <div class="container">
+    <style>{`
+      #list {
+        background-color: lightblue;
+        font: Fantasy;
+      }
+      body {
+        background-image: url("../assets/images/EpicodusTapRoom.jpg");
+        }
+    `}
+    </style>
+  </div>;
+  const beerInformation =
     <div id="list">
       <h3>{props.name}</h3>
       <h3>{props.brewer}</h3>
@@ -26,20 +27,20 @@ function Beer(props){
       <h3>{props.remaining}</h3>
       <hr/>
     </div>;
-    if (props.currentRouterPath === '/admin') {
-      return (
+  if (props.currentRouterPath === '/admin') {
+    return (
       <div onClick={() => {props.onBeerSelection(props.beerId);}}>
         {beerInformation}
       </div>
-      );
-    } else {
-      return (
-        <div>
-          {beerInformation}
-        </div>
-      );
-    }
-    // </div>
+    );
+  } else {
+    return (
+      <div>
+        {beerInformation}
+      </div>
+    );
+  }
+
 }
 
 Beer.propTypes = {

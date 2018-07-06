@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-function NewBeerForm(){
+function NewBeerForm(props){
   let _name = null;
   let _brewer = null;
   let _description = null;
@@ -12,7 +12,14 @@ function NewBeerForm(){
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
-    props.onNewBeerCreation({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value});
+    props.onNewBeerCreation(
+      {
+        name: _name.value,
+        brewer: _brewer.value,
+        description: _description.value,
+        abv: _abv.value, price: _price.value,
+        remaining: _remaining.value
+      });
   }
   return (
     // <div>
@@ -29,7 +36,7 @@ function NewBeerForm(){
     // </div>
 
     <div>
-      <form>
+      <form onSubmit={handleNewBeerFormSubmission}>
         <input
           type='text'
           id='name'
