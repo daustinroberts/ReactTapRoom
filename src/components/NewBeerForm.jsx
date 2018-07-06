@@ -24,7 +24,7 @@ function NewBeerForm(props){
   }
   return (
     // <div>
-    //   <style global jsx>{`
+    //   <style>{`
     //     h3 {
     //       background-color: none;
     //     }
@@ -37,38 +37,38 @@ function NewBeerForm(props){
     // </div>
 
 
-      <form onSubmit={handleNewBeerFormSubmission}>
-        <input
-          type='text'
-          id='name'
-          placeholder='Beer Name'
-          ref={(input) => {_name = input;}}/>
-        <input
-          type='text'
-          id='brewer'
-          placeholder='Brewer'
-          ref={(input) => {_brewer = input;}}/>
-        <textarea
-          id='description'
-          placeholder='Beer Description.'
-          ref={(input) => {_description = input;}}/>
-        <input
-          type='text'
-          id='abv'
-          placeholder='ABV'
-          ref={(input) => {_abv = input;}}/>
-        <input
-          type='text'
-          id='Price'
-          placeholder='Price'
-          ref={(input) => {_price = input;}}/>
-        <input
-          type='text'
-          id='remaining'
-          placeholder='Remaining'
-          ref={(input) => {_remaining = input;}}/>
-        <button type='submit'>Submit</button>
-      </form>
+    <form onSubmit={handleNewBeerFormSubmission}>
+      <input
+        type='text'
+        id='name'
+        placeholder='Beer Name'
+        ref={(input) => {_name = input;}}/>
+      <input
+        type='text'
+        id='brewer'
+        placeholder='Brewer'
+        ref={(input) => {_brewer = input;}}/>
+      <textarea
+        id='description'
+        placeholder='Beer Description.'
+        ref={(input) => {_description = input;}}/>
+      <input
+        type='text'
+        id='abv'
+        placeholder='ABV'
+        ref={(input) => {_abv = input;}}/>
+      <input
+        type='text'
+        id='Price'
+        placeholder='Price'
+        ref={(input) => {_price = input;}}/>
+      <input
+        type='text'
+        id='remaining'
+        placeholder='Remaining'
+        ref={(input) => {_remaining = input;}}/>
+      <button type='submit'>Submit</button>
+    </form>
     // <div id='beerGif'>
     //
     // </div>

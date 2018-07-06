@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 function Error404(props){
   return (
     <div>
-      //location?
       <h2>The page {props.location.pathname} does not exist</h2>
       <h3>Return <Link to="/">Home</Link>?</h3>
     </div>
