@@ -21,6 +21,7 @@ It should:
 Run the following commands in the command line:
 * 1. Run npm install
 * 2. Run webpack to compile the project
+* 3. Run npm run start
 
 ## Known bugs ##
 
